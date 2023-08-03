@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text&family=Inconsolata:wght@400;700&family=Montserrat:wght@300;500&family=Oswald&family=PT+Serif&family=Playfair+Display&family=Prata&family=Raleway:ital,wght@0,200;1,400&family=Rampart+One&family=Roboto+Slab:wght@300;400&family=Space+Mono:wght@400;700&family=Tektur&family=Tilt+Prism&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+$font1: 'Montserrat', sans-serif;
+@font-face {
+    font-family: Manstein;
+    src: url(assets/Fuentes/Manstein.ttf);
+}
+
+
+
+    .cont_header {
+        width: 100%;
+        height: 600px;
+        background-image: linear-gradient(rgba(128, 128, 128, 0.367), rgba(0, 0, 0, 0.333)),url(assets/img/parrilla-variedad-carnes-ella.jpg);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        display: flex;
+
+    
+        header {
+            width: 100%;
+            height: 70px;
+            text-align: center;
+            display: flex;
+            ul{
+                display: flex;
+    
+            }
+                    li {
+                        list-style: none;
+                        padding-top: 25px;
+                        a {
+                            margin-left: 45px;
+                            text-decoration: none;
+                            font-size: 16px;
+                            color: white;
+                            font-family: $font1;
+                            font-weight: 200;
+                        }   
+                        
+                    }
+                }
+                h1{
+                    font-size: 55px;
+                    position: absolute;
+                    top: 150px;
+                    left: 25px;
+                    color: white;
+                    font-family: Manstein;
+                }
+                .logoImg{
+                    position: absolute;
+                    top: 170px;
+                    left: -50px;
+                    width: 500px;
+                    height: 400px;
+                    background-image: url(assets/img/logoBG.png);
+                    background-size: cover;
+                    background-position: center;
+                }        
+            }
+
+            .elJefe{
+                width: 100%;
+                height: 700px;
+                background-color:rgb(255, 255, 255);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                
+                .jefeText{
+                    width: 100%;
+                    height: 600px;
+                    h2{
+                        text-align: center;
+                        font-family: Manstein;
+                        font-size: 31.3px;
+                        padding-top: 20px;
+                        color: rgb(196, 148, 87);
+                    }
+                    p{
+                        font-size: 18px;
+                        font-family: $font1;
+                        text-align: center;
+                        padding: 20px 10px 0px 10px;
+                        color: gray;
+                    }
+                }
+                .jefeImg{
+                    width: 100%;
+                    height: 300px;
+                    img{
+                        margin-top: 10px;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+            .nosotros{
+                margin-top: 15px;
+                width: 100%;
+                height: 700px;
+                background-color:rgb(255, 255, 255);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .nosotrosText{
+                    h3{
+                        text-align: center;
+                        font-family: Manstein;
+                        font-size: 29.9px;
+                        padding-top: 20px;
+                        color: rgb(196, 148, 87);
+                    }
+                    p{
+                        font-size: 18px;
+                        font-family: $font1;
+                        text-align: center;
+                        padding: 20px 10px 10px 10px;
+                        color: gray;
+                    }
+                }
+                .nosotrosImg{
+                    width: 100%;
+                    height: 300px;
+
+                    background-image: url(assets/img/buffet-festivo-salado-pescado-carne-papas-fritas-bolas-queso-otras-especialidades-celebrar-bodas-otros-eventos.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    margin: 5px;
+
+                }
+            }
+            
+            footer{
+                width: 100%;
+                height: 300px;
+                text-align: center;
+                font-size: 16px;
+                font-family: $font1;
+                background-color: rgb(12, 11, 11);
+                color: white;
+                padding: 10px 15px 0px 0px;
+                .contYhoras{
+                    padding: 10px;
+                    .section{
+                        padding-top: 8px;
+                    }
+                }
+                .BotonFooter1{
+                    color: white;
+                }
+                .BotonFooter2{
+                    color: white;
+                }
+                .redes{
+                    text-align: start;
+                    padding: 10px 0px 0px 10px;
+                }
+                span{
+                    padding-top: 10px;
+                    font-size: 20px;
+                }
+            }
+
+
+
+
