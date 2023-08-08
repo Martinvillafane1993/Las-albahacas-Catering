@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 @font-face {
@@ -22,7 +23,7 @@
   width: 100%;
   height: 70px;
   text-align: center;
-  display: flex;
+  display: inline-block;
 }
 .cont_header header ul {
   display: flex;
@@ -93,8 +94,7 @@
   margin-top: 10px;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .nosotros {
@@ -130,6 +130,14 @@
   margin: 5px;
 }
 
+h4 {
+  text-align: center;
+  font-family: Manstein;
+  font-size: 24.9px;
+  padding-top: 15px;
+  color: rgb(196, 148, 87);
+}
+
 footer {
   width: 100%;
   height: 300px;
@@ -159,4 +167,265 @@ footer .redes {
 footer span {
   padding-top: 10px;
   font-size: 20px;
-}/*# sourceMappingURL=style.css.map */
+}
+
+i {
+  font-size: 55px;
+  position: fixed;
+  left: 80%;
+  top: 75%;
+}
+
+i:hover {
+  transform: scale(1.4);
+  transition: all 1.4s;
+}
+
+@media (min-width: 1023px) {
+  .cont_header {
+    width: 100%;
+    height: 600px;
+    background-image: linear-gradient(rgba(128, 128, 128, 0.367), rgba(0, 0, 0, 0.333)), url(assets/img/parrilla-variedad-carnes-ella.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+  }
+  .cont_header header {
+    width: 100%;
+    height: 70px;
+    display: flexbox;
+  }
+  .cont_header header ul {
+    justify-content: center;
+    align-items: center;
+  }
+  .cont_header header ul::after, .cont_header header ul::before {
+    content: "";
+    width: 300px;
+    height: 1.5px;
+    background-color: white;
+    position: relative;
+    top: 0.6em;
+  }
+  .cont_header header ul::after {
+    left: 120px;
+  }
+  .cont_header header ul::before {
+    right: 50px;
+  }
+  .cont_header header li {
+    list-style: none;
+    padding-top: 25px;
+  }
+  .cont_header header li a {
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    transition: all 1.3s;
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  .cont_header header li a:hover {
+    text-shadow: -15px 0px 4px;
+    color: white;
+    transform: scale(1.1);
+  }
+  .cont_header h1 {
+    font-size: 55px;
+    position: absolute;
+    top: 150px;
+    left: 40%;
+    color: white;
+    font-family: Manstein;
+  }
+  .cont_header .logoImg {
+    position: absolute;
+    top: 100px;
+    left: 33%;
+    width: 600px;
+    height: 500px;
+    background-image: url(assets/img/logoBG.png);
+    background-size: cover;
+    background-position: center;
+  }
+  .elJefe {
+    width: 100%;
+    height: 700px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .elJefe .jefeText {
+    padding-top: 50px;
+    width: 100%;
+    height: 600px;
+  }
+  .elJefe .jefeText h2 {
+    position: relative;
+    text-align: center;
+    font-family: Manstein;
+    font-size: 31.3px;
+    padding-top: 20px;
+    color: rgb(196, 148, 87);
+  }
+  .elJefe .jefeText h2::after, .elJefe .jefeText h2::before {
+    content: "";
+    width: 300px;
+    height: 2px;
+    background-color: rgb(196, 148, 87);
+    position: absolute;
+    top: 1.5em;
+  }
+  .elJefe .jefeText h2::after {
+    left: 250px;
+  }
+  .elJefe .jefeText h2::before {
+    right: 250px;
+  }
+  .elJefe .jefeText p {
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    padding: 20px 10px 0px 10px;
+    color: gray;
+  }
+  .elJefe .jefeImg {
+    width: 100%;
+    height: 300px;
+  }
+  .elJefe .jefeImg img {
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .nosotros {
+    width: 100%;
+    height: 700px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .nosotros .nosotrosText h3 {
+    position: relative;
+    text-align: center;
+    font-family: Manstein;
+    font-size: 29.9px;
+    color: rgb(196, 148, 87);
+    padding-bottom: 15px;
+  }
+  .nosotros .nosotrosText h3::after, .nosotros .nosotrosText h3::before {
+    content: "";
+    width: 300px;
+    height: 2px;
+    background-color: rgb(196, 148, 87);
+    position: absolute;
+    top: 1.6em;
+  }
+  .nosotros .nosotrosText h3::after {
+    left: 250px;
+  }
+  .nosotros .nosotrosText h3::before {
+    right: 250px;
+  }
+  .nosotros .nosotrosText p {
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    padding: 20px 10px 70px 10px;
+    color: gray;
+  }
+  .nosotros .nosotrosImg {
+    width: 100%;
+    height: 300px;
+    background-image: url(assets/img/buffet-festivo-salado-pescado-carne-papas-fritas-bolas-queso-otras-especialidades-celebrar-bodas-otros-eventos.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 5px;
+  }
+  h4 {
+    text-align: center;
+    font-family: Manstein;
+    font-size: 24.9px;
+    padding: 25px 0 25px 0;
+    color: rgb(196, 148, 87);
+    position: relative;
+  }
+  h4::after, h4::before {
+    content: "";
+    width: 300px;
+    height: 2px;
+    background-color: rgb(196, 148, 87);
+    position: absolute;
+    top: 1.5em;
+  }
+  h4::after {
+    left: 250px;
+  }
+  h4::before {
+    right: 250px;
+  }
+  footer {
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    background-color: rgb(12, 11, 11);
+    color: white;
+    padding: 10px 15px 0px 0px;
+  }
+  footer .contYhoras {
+    margin-top: 30px;
+    position: absolute;
+    left: 100px;
+    display: inline-block;
+    border: 2px dashed white;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  footer .contYhoras .section {
+    padding-bottom: 12px;
+  }
+  footer .BotonFooter1 {
+    color: white;
+    position: relative;
+    top: 25px;
+  }
+  footer .BotonFooter2 {
+    color: white;
+    position: relative;
+    top: 50px;
+  }
+  footer .redes {
+    position: relative;
+    top: 90px;
+    left: 70%;
+    text-align: start;
+    padding: 10px 0px 0px 10px;
+  }
+  footer span {
+    position: relative;
+    left: 20%;
+    top: 150px;
+    font-size: 20px;
+  }
+  i {
+    font-size: 55px;
+    position: fixed;
+    left: 87%;
+    top: 75%;
+  }
+  i:hover {
+    transform: scale(1.4);
+    transition: all 1.4s;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
