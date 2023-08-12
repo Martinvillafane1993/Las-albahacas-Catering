@@ -322,7 +322,8 @@ body header h1 {
     justify-content: center;
     align-items: center;
   }
-  .cont_header header ul::after, .cont_header header ul::before {
+  .cont_header header ul::after,
+  .cont_header header ul::before {
     content: "";
     width: 300px;
     height: 1.5px;
@@ -394,7 +395,8 @@ body header h1 {
     padding-top: 20px;
     color: rgb(196, 148, 87);
   }
-  .elJefe .jefeText h2::after, .elJefe .jefeText h2::before {
+  .elJefe .jefeText h2::after,
+  .elJefe .jefeText h2::before {
     content: "";
     width: 300px;
     height: 2px;
@@ -442,7 +444,8 @@ body header h1 {
     color: rgb(196, 148, 87);
     padding-bottom: 15px;
   }
-  .nosotros .nosotrosText h3::after, .nosotros .nosotrosText h3::before {
+  .nosotros .nosotrosText h3::after,
+  .nosotros .nosotrosText h3::before {
     content: "";
     width: 300px;
     height: 2px;
@@ -479,7 +482,8 @@ body header h1 {
     color: rgb(196, 148, 87);
     position: relative;
   }
-  h4::after, h4::before {
+  h4::after,
+  h4::before {
     content: "";
     width: 300px;
     height: 2px;
@@ -547,6 +551,158 @@ body header h1 {
   i:hover {
     transform: scale(1.4);
     transition: all 1.4s;
+  }
+}
+@media (min-width: 1023px) {
+  body {
+    background-image: url(assets/img/Background-Certificacion.png);
+    background-size: inherit;
+    background-position: center;
+  }
+  body header {
+    width: 100%;
+    height: 100px;
+  }
+  body header #btnInicio {
+    font-size: 70px;
+    width: 50px;
+    height: 40px;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+  }
+  body header h1 {
+    font-size: 55px;
+    color: white;
+    text-align: center;
+    padding: 35px 0 10px 0;
+    font-family: Manstein;
+    letter-spacing: 1.3px;
+  }
+  body header h1::after,
+  body header h1::before {
+    content: "";
+    width: 200px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    top: 1.4em;
+  }
+  body header h1::after {
+    left: 180px;
+  }
+  body header h1::before {
+    right: 180px;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 20px;
+    align-items: start;
+  }
+  main .certFront {
+    padding: 50px 8.5px 15px 8.5px;
+    width: 100%;
+    height: 600px;
+    display: flex;
+  }
+  main .certFront img {
+    width: 70%;
+    margin-left: 150px;
+    height: 500px;
+    border: 2.5px solid #54ab56;
+    border-radius: 15px;
+  }
+  main .colImg1 {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    gap: 10px;
+    align-self: start;
+    grid-template-columns: 1fr;
+    width: 300px;
+    height: 700px;
+  }
+  main .colImg1 .section1 {
+    width: 100%;
+    height: 170px;
+    padding: 5px 8px 5px 8px;
+    background-image: url(assets/img/finger-food-gedcc99996_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    border: 1.5px solid #54ab56;
+  }
+  main .colImg1 .section2 {
+    width: 100%;
+    height: 170px;
+    padding: 5px 8px 5px 8px;
+    background-image: url(assets/img/hermosos-dulces-fresas-celebracion-bodas.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    border: 1.5px solid #54ab56;
+  }
+  main .colImg1 .section3 {
+    width: 100%;
+    height: 170px;
+    padding: 5px 8px 5px 8px;
+    background-image: url(assets/img/mesa-buffet-aperitivos-hamburguesas-quesos-etc.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    border: 1.5px solid #54ab56;
+  }
+  main .certBack {
+    padding: 50px 8.5px 15px 8.5px;
+    width: 100%;
+    height: 600px;
+    display: flex;
+  }
+  main .certBack img {
+    width: 70%;
+    margin-left: 150px;
+    height: 500px;
+    border: 2.5px solid #54ab56;
+    border-radius: 15px;
+  }
+  main .colImg2 {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    gap: 10px;
+    align-self: start;
+    grid-template-columns: 1fr;
+    width: 300px;
+    height: 700px;
+  }
+  main .colImg2 .section4 {
+    width: 100%;
+    height: 170px;
+    padding: 5px 8px 5px 8px;
+    background-image: url(assets/img/snacks-g93ad12300_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    border: 1.5px solid #54ab56;
+  }
+  main .colImg2 .section5 {
+    width: 100%;
+    height: 170px;
+    padding: 5px 8px 5px 8px;
+    background-image: url(assets/img/chunks-ga6a233ef6_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    border: 1.5px solid #54ab56;
+  }
+  main .colImg2 .section6 {
+    width: 100%;
+    height: 170px;
+    padding: 5px 8px 5px 8px;
+    background-image: url(assets/img/sausage-g9c5c90450_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    border: 1.5px solid #54ab56;
   }
 }
 
